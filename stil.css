@@ -1,0 +1,445 @@
+/*----------------glavnina----------------------*/ 
+html{
+height: 100%;
+}
+
+*{            /*selects all elements*/
+margin: 0;
+padding:0;
+}
+
+body{
+background: gray;
+font: normal arial; 
+height: 100%;
+}
+
+#main, #header, #logo, #menubar, #site_content, #footer
+{ margin-left: auto; 
+  margin-right: auto;}
+  
+/*----------------tekst----------------------*/ 
+  p
+{ padding: 16px;
+  line-height: 1.7em;
+  font-family:Georgia, 'century gothic', arial, sans-serif;
+  font-size: 10pt;
+  color: white;
+  } 
+  
+ #sidebar p
+{ padding: 0 0 16px 0;
+  line-height: 1.7em;
+  font-family: arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: small;
+  letter-spacing: 1px;} 
+  
+  #logo1 p
+  { font-family: 'UnZialish';
+  src: url('http://www.fontsaddict.com/fontface/unzialish.ttf');
+  /*font: normal 175% 'courier', arial, sans-serif;*/
+  font-size: 60pt;
+  text-shadow: 5px 20px 8px rgba(53, 53, 53, 0.5); /*#7A8076;*/
+  color: transparent;
+  }
+  
+ h1
+{ font: normal 175% 'century gothic', arial, sans-serif;
+  color: gray;
+  margin: 0 0 15px 0;
+  padding: 16px 16px 0px 16px;}
+  
+h2{
+font: normal 175% 'century gothic', arial, sans-serif;
+color: white;
+margin: 0 0 15px 0;
+padding: 15px 0 5px 0;
+}
+
+h3, h4, h5, h6 
+{
+font: normal 175% 'century gothic', arial, sans-serif;
+color: white;
+margin: 0 0 15px 0;
+padding: 15px 0 5px 0;
+font-size: medium;
+} 
+
+/*-------------main-----------------------------------------------------------------*/
+ 
+#main{
+
+height: auto;
+width:1090px;
+
+background-color: white;
+/* background: url(content.png) repeat-y; */
+
+box-shadow: 0px 5px 21px 5px rgba(50, 50, 50, 1);
+
+}
+
+/*-----------header---------------------------*/
+
+#header{
+/*margin:;
+padding:;
+border:;*/
+
+
+min-height: 600px;
+width:1090px;
+
+
+}
+
+#logo{
+/*margin:;
+padding:;
+border:; */
+
+height: 600px;
+width:1090px;
+
+overflow: hidden;
+
+
+background-color: black;
+background-image: url("snowstorm.jpg");
+background-repeat: no-repeat;
+background-size: 1090px 600px;
+ 
+}
+
+#logo1{
+margin-top: -45px;
+float: left;
+position: relative;
+z-index: 2000;
+ 
+ background: transparent;
+}
+
+#menubar{
+margin-top:365px;
+
+
+height:35px; 
+width:1090px;
+
+position: absolute;
+opacity: 0.4;
+filter: alpha(opacity=40); 
+z-index: 100;
+
+background-color: black;
+}
+
+#con{
+height:365px; 
+width:1090px;
+background-color:none;
+z-index:2000;
+position: absolute;
+margin-top: 150px;
+}
+
+.pikachu{
+height:365px; 
+width:990px;
+background-color:black;
+
+float: right;
+margin-right:30px;
+
+/* 
+opacity: 0.7;
+filter: alpha(opacity=40); 
+*/
+
+background: rgba(0, 0, 0, 0.7);
+}
+
+/******************/
+/******************/
+
+#null{
+background: none;
+}
+
+#download{
+text-align: center;
+}
+
+#download h1{
+font-size: 50pt;
+position: relative;
+  top: 50%;
+  transform: translateY(-50%)  /* <----------------------- */
+}
+
+/******************/
+/******************/
+
+ul#menu{
+
+padding-top: 5px;
+/*
+height:; 
+width:; */
+text-align:center;
+background-color: black;
+}
+	
+ul#menu li{
+list-style-type: none;
+display: inline;
+padding: 50px;
+
+color: white;
+text-decoration:none;
+}
+
+ul#menu li a{
+/*-webkit-transition: all 0.3s ease-in; /*Safari & Chrome*/
+   transition: all 0.3s ease-in;
+	position: relative;
+
+   text-decoration:none;
+   color:white;
+/*text-shadow:0 0 3px aqua; */
+
+}
+	
+ul#menu li:hover,  ul#menu li:focus,  ul#menu li:active{
+	text-decoration: none;
+	color: #aaf;
+	text-shadow: none;
+	
+	-webkit-transition: 500ms linear 0s;
+	-moz-transition: 500ms linear 0s; /* FF */
+	-o-transition: 500ms linear 0s; /* O */
+	transition: 100ms linear 0s;
+	outline: 0 none;
+}
+
+ul#menu li:hover,  ul#menu li:focus{
+color: #fff;
+text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+}
+
+/******************/
+/******************/
+
+.storytime{
+background: none;
+}
+
+#menubar2{
+background-color: none; 
+
+top: 300px;
+
+position: absolute;
+
+width: 990px;
+
+
+}
+
+ul#menu2{ 
+background: none;
+
+ list-style-type: none;
+display: block;
+
+width:300px;
+margin-left:auto;
+margin-right:auto; 
+
+text-align: center;
+}
+
+ul#menu2 li {
+	
+ display: inline;
+ 
+ background: black;
+ background: rgba(0, 0, 0, 0.6);
+}
+
+ul#menu2 li a{
+letter-spacing: 0em;
+  font: normal 105% arial, sans-serif;
+  text-transform: uppercase;
+color: grey;
+
+ padding:30px;
+  text-decoration: none;
+  position: relative;
+}
+
+ul#menu2 li:hover, ul#menu2 li:active {
+
+text-decoration:none;
+background: rgba(0, 0, 0, 0.9);
+}
+
+/******************/
+
+.content2{ 
+height:365px; 
+width:550px;
+float:left;
+}
+
+.content3{ 
+height:365px; 
+margin-right: 55px;
+float:right;
+}
+
+/******************/
+/******************/
+
+#sponzori{
+
+float: right;
+clear: right;
+
+margin: 5px 10px 5px 15px;
+}
+
+#horror{
+float: right;
+width: 0px; 
+height: 70px
+}
+
+
+
+form{ 
+width:300px;
+color: white;
+margin: 15px 0px 15px 15px;
+}
+
+form p
+{ padding: 0 0 4px 0;}
+
+#forma .error
+{ color: red;}
+
+form .button{ 
+font: 100% arial; 
+border: 1px solid; 
+width: 99px; 
+margin-top: 5px;   
+height: 33px;
+padding: 2px 0 3px 0;
+cursor: pointer; 
+background: #555; 
+color: white;
+float: left;
+  }
+
+.contact_nb{
+float:right;
+}
+
+#forma2 .error
+{ color: red;}
+
+/******************/
+/******************/
+#hideshow{
+
+
+}
+
+#table1, #table2{
+margin-left: auto;
+margin-right: auto;
+}
+
+#table1{
+margin-top: 0px;
+}
+
+#table1 td#tdd{
+
+text-align: center;
+/*padding: ;
+border:; */
+}
+
+#table1 td img#slide{
+
+height:250px;
+width:450px;
+/*padding: ;
+border:; */
+}
+
+#table2{
+margin-top: 90px;
+}
+
+#table2 td {
+
+
+padding-right: 0px;
+padding-left: 0px;
+padding-bottom: 0px;
+padding-top: 0px;
+/*border:; */ 
+}
+
+#table2 td img{
+vertical-align: bottom;  /* <----------------------- */
+width:120px; 
+height:70px;
+padding: ;
+border:; 
+
+opacity: 0.4;
+filter: alpha(opacity=40); 
+
+}
+
+#table2 td img:hover{
+
+padding: ;
+border:; 
+
+opacity: 1.0;
+filter: alpha(opacity=100); 
+}
+
+#table2 td img.umri{
+
+pointer-events: none;
+}
+/******************/
+
+
+/*---------footer--------------*/
+#footer{
+
+
+height: 67px;
+width:1090px;
+
+
+
+text-align: center;
+background-color: black;
+color:white;
+}
+
+#footer p{
+margin-bottom: -20px;
+vertical-align:middle;
+}
